@@ -6,7 +6,7 @@
 
 hook OnGameModeInit()
 {
-	mysql_log(ALL);
+	mysql_log(MYSQL_LOG);
 
 	new MySQLOpt:options = mysql_init_options();
 	mysql_set_option(options, POOL_SIZE, MYSQL_POOL_SIZE);

@@ -16,10 +16,10 @@ hook OnGroupInit()
 
 YCMD:setmoney(playerid, params[], help)
 {
-	if(help) return SCM(playerid, -1, "Not supported");
+	if(help) return SendClientMessage(playerid, -1, "Not supported");
 	new money;
 
-	if (sscanf(params, "d", money)) return SCM(playerid, -1, "/setmoney [money]");
+	if (sscanf(params, "d", money)) return SendClientMessage(playerid, -1, "/setmoney [money]");
 
 	ResetPlayerMoney(playerid);
 	GivePlayerMoney(playerid, money);

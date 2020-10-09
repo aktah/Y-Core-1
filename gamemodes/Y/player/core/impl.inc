@@ -23,7 +23,7 @@ hook OnGroupInit()
 
 YCMD:enter(playerid, params[], help)
 {
-	if(help) return SCM(playerid, -1, "Not supported");
+	if(help) return SendClientMessage(playerid, -1, "Not supported");
 
 	call OnPlayerEnter(playerid);	
 

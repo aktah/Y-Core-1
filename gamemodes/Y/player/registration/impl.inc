@@ -55,7 +55,7 @@ ShowRegistrationDialog(playerid, e_ERROR_PASSWORD:errorCode = e_ERROR_PASSWORD_N
 	return 1;
 }
 
-CheckRegistrationPassword(playerid, password[])
+CheckRegistrationPassword(playerid, const password[])
 {
 	new len = strlen(password);
 

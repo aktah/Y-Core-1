@@ -14,18 +14,6 @@
 		#include "player\header"
 	#endif
 
-	#if defined Y_VEHICLE_ENABLED
-		#include "vehicle\header"
-	#endif
-
-	#if defined Y_OBJECT_ENABLED
-		#include "object\header"
-	#endif
-
-	#if defined Y_MODE_RP
-		#include "RP\RP"
-	#endif
-
 	#define Y_@@@@_HEADER
 #elseif !defined Y_@@@@_END
 	#include "core\impl"
@@ -38,17 +26,6 @@
 		#include "player\impl"
 	#endif
 
-	#if defined Y_VEHICLE_ENABLED
-		#include "vehicle\impl"
-	#endif
-
-	#if defined Y_OBJECT_ENABLED
-		#include "object\impl"
-	#endif
-
-	#if defined Y_MODE_RP
-		#include "RP\RP"
-	#endif
 	#define Y_@@@@_END
 #else
 	#error Y core already set up

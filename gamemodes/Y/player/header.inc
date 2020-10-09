@@ -12,8 +12,4 @@
 
 #include "status\header"
 
-#if defined Y_PLAYER_VEHICLE_ENABLED
-	#include "vehicle\header"
-#endif
-
 #include "admin\header"

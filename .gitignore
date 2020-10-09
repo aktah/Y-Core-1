@@ -1,26 +1,54 @@
-*
-!.gitignore
-!gamemodes/**/*.inc
-!gamemodes/**/*.pwn
-!gamemodes/config.inc.template
+#
+# Package only files
+#
+
+# Compiled Bytecode, precompiled output and assembly
+*.amx
+*.lst
+*.asm
+
+# Vendor directory for dependencies
+dependencies/
+
+# Dependency versions lockfile
+pawn.lock
+
+
+#
+# Server/gamemode related files
+#
+
+# compiled settings file
+# keep `samp.json` file on version control
+# but make sure the `rcon_password` field is set externally
+# you can use the environment variable `SAMP_RCON_PASSWORD` to do this.
+server.cfg
+
+# Plugins directory
+plugins/
+
+# binaries
+*.exe
+*.dll
+*.so
+announce
+samp03svr
+samp-npc
+
+# logs
+logs/
+server_log.txt
+crashinfo.txt
+
+# Ban list
+samp.ban
+
+#
+# Common files
+#
+
+*.sublime-workspace
+
 gamemodes/config.inc
-gamemodes/Y/RP/**/*
-!*/
-!scriptfiles/Y/**/*
-!scriptfiles/YSI/**/*
-scriptfiles/YSI/test_ini
-scriptfiles/YSI/test_users
-scriptfiles/YSI/tests
-scriptfiles/YSI/text/core.*
-scriptfiles/YSI/YDBG
-scriptfiles/YSI/_temp_ysi_live_file_.ysi
-scriptfiles/YSI/alltests_config.ini
-scriptfiles/YSI/new test.txt
-scriptfiles/YSI/new_mode.EN
-scriptfiles/YSI/new_mode.PL
-scriptfiles/YSI/new_mode_format.YSI
 
 !README.md
-!CREDITS.md
-
-gamemodes/test.pwn

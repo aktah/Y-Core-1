@@ -26,7 +26,6 @@ hook OnGroupInit()
 	return 1;
 }
 
-// http://forum.sa-mp.com/showpost.php?p=2894606&postcount=3
 hook OnRconLoginAttempt(ip[], password[], success)
 {
 	if (success) {
@@ -113,7 +112,7 @@ bool:IsAdminLevel(playerid, level)
 
 YCMD:setadminlevel(playerid, params[], help)
 {
-	if(help) return SCM(playerid, -1, "Not supported");
+	if(help) return SendClientMessage(playerid, -1, "Not supported");
 
 	new
 		targetid,
